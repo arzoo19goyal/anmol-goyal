@@ -2,32 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
+  body {
+    @apply bg-[#fdfeff] text-[#1f2937] tracking-wide;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  li {
+    @apply cursor-pointer hover:bg-gray-200 p-3 items-center justify-center;
+  }
+
+  button {
+    @apply rounded-full px-4 py-3 shadow-xl shadow-gray-400 font-bold text-white;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.rounded-btn {
+  @apply rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.project {
+  @apply grid grid-cols-2 items-center justify-center w-full shadow-lg shadow-gray-400 rounded-xl p-4;
+}
+
+.skill-icon {
+  @apply w-10 h-10 text-gray-600;
 }
