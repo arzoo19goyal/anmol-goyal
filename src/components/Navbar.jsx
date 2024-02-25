@@ -143,41 +143,43 @@ const Navbar = () => {
               <p className="uppercase tracking-widest text-[#2f347a]">
                 Let&#39;s Connect
               </p>
-              <div className="w-full sm:w-[70%] md:w-[60%]">
-                <div className="flex items-center justify-between my-4 ">
-                  <a
-                    href="https://www.linkedin.com/in/anmol07goyal/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                      <FaLinkedinIn />
-                    </div>
-                  </a>
-                  <a
-                    href="https://github.com/anmol20goyal?tab=repositories"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                      <FaGithub />
-                    </div>
-                  </a>
-                  <Link href="/#contact">
-                    <div
-                      onClick={() => setNav(!nav)}
-                      className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+              <div className="flex justify-center items-center">
+                <div className="w-full">
+                  <div className="flex items-center justify-between my-4 ">
+                    <a
+                      href="https://www.linkedin.com/in/anmol07goyal/"
+                      target="_blank"
+                      rel="noreferrer"
                     >
-                      <AiOutlineMail />
-                    </div>
-                  </Link>
-                </div>
-                {/* resume download button */}
-                <div className="py-3 justify-center flex">
-                  <button className="flex justify-center items-center bg-[#0e7490] hover:scale-110 hover:bg-[#0e7490] ease-in duration-300 ">
-                    <p className="mr-2">Download Resume</p>
-                    <FaFileDownload className="text-white justify-center" />
-                  </button>
+                      <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                        <FaLinkedinIn />
+                      </div>
+                    </a>
+                    <a
+                      href="https://github.com/anmol20goyal?tab=repositories"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                        <FaGithub />
+                      </div>
+                    </a>
+                    <Link href="/#contact">
+                      <div
+                        onClick={() => setNav(!nav)}
+                        className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                      >
+                        <AiOutlineMail />
+                      </div>
+                    </Link>
+                  </div>
+                  {/* resume download button */}
+                  <div className="py-3 justify-center flex">
+                    <button className="flex justify-center items-center bg-[#0e7490] hover:scale-110 hover:bg-[#0e7490] ease-in duration-300 ">
+                      <p className="mr-2">Download Resume</p>
+                      <FaFileDownload className="text-white justify-center" />
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
