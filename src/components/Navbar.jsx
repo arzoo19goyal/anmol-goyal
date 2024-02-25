@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn, FaFileDownload } from "react-icons/fa";
 import { Roboto_Condensed } from "next/font/google";
@@ -8,16 +8,22 @@ import { Roboto_Condensed } from "next/font/google";
 const roboto_condensed = Roboto_Condensed({
   subsets: ["latin"],
   weight: ["400", "700"],
-  style: "italic",
 });
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
+  const sidebarRef = useRef(null);
 
-  const handleNav = () => {
+  const handleSideNavbar = () => {
     setNav(!nav);
+  };
+
+  const handleClickOutside = (e) => {
+    if (e.target !== sidebarRef.current) {
+      setNav(false);
+    }
   };
 
   useEffect(() => {
@@ -29,6 +35,11 @@ const Navbar = () => {
       }
     };
     window.addEventListener("scroll", handleShadow);
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
   return (
@@ -63,7 +74,7 @@ const Navbar = () => {
             </li>
           </ul>
           {/* Hamburger Icon */}
-          <div onClick={handleNav} className="md:hidden">
+          <div onClick={handleSideNavbar} className="md:hidden cursor-pointer">
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -78,6 +89,7 @@ const Navbar = () => {
       >
         {/* Side Drawer Menu */}
         <div
+          ref={sidebarRef}
           className={
             nav
               ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 overflow-auto"
@@ -91,53 +103,64 @@ const Navbar = () => {
               >
                 Anmol Goyal
               </h2>
-              <div
-                onClick={handleNav}
+              {/* <div
+                onClick={handleSideNavbar}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
               >
                 <AiOutlineClose />
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <li
-                onClick={() => setNav(false)}
-                className="pt-6 text-sm border-b border-gray-300 hover:border-l-4 hover:border-[#0e7490] hover:border-y-0"
-              >
-                <Link href="/">Home</Link>
-              </li>
-              <li
-                onClick={() => setNav(false)}
-                className="pt-6 text-sm border-b border-gray-300 hover:border-l-4 hover:border-[#0e7490] hover:border-y-0"
-              >
-                <Link href="/#about">About</Link>
-              </li>
-
-              <li
-                onClick={() => setNav(false)}
-                className="pt-6 text-sm border-b border-gray-300 hover:border-l-4 hover:border-[#0e7490] hover:border-y-0"
-              >
-                <Link href="/#skills">Skills</Link>
-              </li>
-              <li
-                onClick={() => setNav(false)}
-                className="pt-6 text-sm border-b border-gray-300 hover:border-l-4 hover:border-[#0e7490] hover:border-y-0"
-              >
-                <Link href="/#projects">Projects</Link>
-              </li>
-              <li
-                onClick={() => setNav(false)}
-                className="pt-6 text-sm border-b border-gray-300 hover:border-l-4 hover:border-[#0e7490] hover:border-y-0"
-              >
-                <Link href="/resume">Resume</Link>
-              </li>
-              <li
-                onClick={() => setNav(false)}
-                className="pt-6 text-sm border-b border-gray-300 hover:border-l-4 hover:border-[#0e7490] hover:border-y-0"
-              >
-                <Link href="/#contact">Contact</Link>
-              </li>
+              <Link href="/">
+                <li
+                  onClick={() => setNav(false)}
+                  className="pt-6 text-sm border-b border-gray-300 hover:border-l-4 hover:border-[#0e7490] hover:border-y-0"
+                >
+                  Home
+                </li>
+              </Link>
+              <Link href="/#about">
+                <li
+                  onClick={() => setNav(false)}
+                  className="pt-6 text-sm border-b border-gray-300 hover:border-l-4 hover:border-[#0e7490] hover:border-y-0"
+                >
+                  About
+                </li>
+              </Link>
+              <Link href="/#skills">
+                <li
+                  onClick={() => setNav(false)}
+                  className="pt-6 text-sm border-b border-gray-300 hover:border-l-4 hover:border-[#0e7490] hover:border-y-0"
+                >
+                  Skills
+                </li>
+              </Link>
+              <Link href="/#projects">
+                <li
+                  onClick={() => setNav(false)}
+                  className="pt-6 text-sm border-b border-gray-300 hover:border-l-4 hover:border-[#0e7490] hover:border-y-0"
+                >
+                  Projects
+                </li>
+              </Link>
+              <Link href="/resume">
+                <li
+                  onClick={() => setNav(false)}
+                  className="pt-6 text-sm border-b border-gray-300 hover:border-l-4 hover:border-[#0e7490] hover:border-y-0"
+                >
+                  Resume
+                </li>
+              </Link>
+              <Link href="/#contact">
+                <li
+                  onClick={() => setNav(false)}
+                  className="pt-6 text-sm border-b border-gray-300 hover:border-l-4 hover:border-[#0e7490] hover:border-y-0"
+                >
+                  Contact
+                </li>
+              </Link>
             </ul>
             <div className="pt-[30%] h-auto">
               <p className="uppercase tracking-widest text-[#2f347a]">
@@ -164,7 +187,7 @@ const Navbar = () => {
                         <FaGithub />
                       </div>
                     </a>
-                    <Link href="/#contact">
+                    <Link href="mailto:anmol77goyal@gmail.com">
                       <div
                         onClick={() => setNav(!nav)}
                         className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"

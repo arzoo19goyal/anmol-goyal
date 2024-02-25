@@ -16,7 +16,7 @@ const Main = () => {
               Hi, I&#39;m <span className="text-[#0e7490]"> Anmol</span>
             </h1>
             <h2 className="py-2">Unity Game Programmer & Developer</h2>
-            <p className="py-4 sm:max-w-[70%] m-auto">
+            <p className="py-4 sm:max-w-[70%] m-auto text-xl">
               I’m focused on building responsive games integrating back-end
               technologies.
             </p>
@@ -39,7 +39,7 @@ const Main = () => {
                   <FaGithub />
                 </div>
               </a>
-              <Link href="/#contact">
+              <Link href="mailto:anmol77goyal@gmail.com">
                 <div className="text-white text-xl rounded-full border border-gray-400 shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
                   <AiOutlineMail />
                 </div>
