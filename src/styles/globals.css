@@ -51,7 +51,7 @@ html {
 
 .skills-table {
   ul {
-    @apply p-2 grid grid-rows-[1fr,2fr];
+    @apply p-1 grid grid-rows-[1fr,2fr];
   }
 
   p {
@@ -60,5 +60,11 @@ html {
 
   li {
     @apply px-0 items-center justify-center hover:bg-white;
+  }
+}
+
+.project-desc {
+  li {
+    @apply cursor-default hover:bg-white;
   }
 }

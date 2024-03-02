@@ -15,7 +15,6 @@ export default function Home() {
           name="description"
           content="I’m a game developer specializing in building (and occasionally designing) exceptional digital experiences."
         />
-        <link rel="icon" href="/fav.png" />
       </Head>
       <Main />
       <About />
