@@ -5,17 +5,17 @@ import React, { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IoIosArrowDropupCircle } from "react-icons/io";
-import anmolPic from "../../public/assets/anmol-blur.png";
+import anmolPic from "../../../public/assets/anmol-blur.png";
 import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
     <div id="contact" className="w-full h-auto px-2 py-16">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
+      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-auto">
         <h2 className="text-xl uppercase py-4">Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+          <div className="col-span-3 lg:col-span-2 w-full h-auto shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-2 bg-[#0e749068] max-w-[240px]">
                 <Image
@@ -74,9 +74,7 @@ const Contact = () => {
 
           {/* right */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
-            <div className="p-4">
-              <ContactForm />
-            </div>
+            <ContactForm />
           </div>
           <div className="py-6 px-2 fixed bottom-0 right-0">
             <Link href="/">

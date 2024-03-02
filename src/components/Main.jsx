@@ -6,7 +6,7 @@ import BackgroundVideo from "./BackgroundVideo";
 
 const Main = () => {
   return (
-    <div id="home" className="w-full h-screen text-center">
+    <div id="home" className="w-full h-screen text-center mt-16">
       <div className="w-full h-screen mx-auto p-2 flex justify-center items-center">
         <div className="w-full h-screen text-center">
           <BackgroundVideo />
@@ -48,7 +48,11 @@ const Main = () => {
             {/* resume download button */}
             <div className="py-3 justify-center flex">
               <button className="flex justify-center items-center bg-[#0e7490] hover:scale-110 hover:bg-[#0e7490] ease-in duration-300 ">
-                <p className="mr-2">Download Resume</p>
+                <p className="mr-2">
+                  <a href="assets/Anmol_Resume.pdf" download="Anmol_Resume.pdf">
+                    Download Resume
+                  </a>
+                </p>
                 <FaFileDownload className="text-white justify-center" />
               </button>
             </div>

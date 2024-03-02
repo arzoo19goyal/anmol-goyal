@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn, FaFileDownload } from "react-icons/fa";
 import { Roboto_Condensed } from "next/font/google";
+import { useRouter } from "next/router";
 
 const roboto_condensed = Roboto_Condensed({
   subsets: ["latin"],
@@ -14,16 +15,11 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
-  const sidebarRef = useRef(null);
+  const [linkColor, setLinkColor] = useState("#1f2937");
+  const router = useRouter();
 
   const handleSideNavbar = () => {
     setNav(!nav);
-  };
-
-  const handleClickOutside = (e) => {
-    if (e.target !== sidebarRef.current) {
-      setNav(false);
-    }
   };
 
   useEffect(() => {
@@ -35,25 +31,33 @@ const Navbar = () => {
       }
     };
     window.addEventListener("scroll", handleShadow);
-    document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
   }, []);
+
+  useEffect(() => {
+    if (router.asPath === "/project") {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+  }, [router]);
 
   return (
     <div
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
-          : "fixed w-full h-20 z-[100]"
+          ? "fixed top-0 w-full h-16 shadow-xl z-[100] ease-in-out duration-300"
+          : "fixed top-0 w-full h-16 z-[100]"
       }
     >
       <div className="flex justify-start items-center w-full h-full px-2">
         <div>
-          <ul className="hidden md:flex xl:ml-[235px] ease-in duration-300">
+          <ul
+            style={{ color: `${linkColor}` }}
+            className="hidden md:flex xl:ml-[48%] ease-in duration-300"
+          >
             <li className="text-sm uppercase rounded hover:border-2 border-b-[#0e7490]">
               <Link href="/">Home</Link>
             </li>
@@ -89,7 +93,6 @@ const Navbar = () => {
       >
         {/* Side Drawer Menu */}
         <div
-          ref={sidebarRef}
           className={
             nav
               ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 overflow-auto"
@@ -103,12 +106,12 @@ const Navbar = () => {
               >
                 Anmol Goyal
               </h2>
-              {/* <div
+              <div
                 onClick={handleSideNavbar}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
               >
                 <AiOutlineClose />
-              </div> */}
+              </div>
             </div>
           </div>
           <div className="py-4 flex flex-col">
@@ -199,7 +202,14 @@ const Navbar = () => {
                   {/* resume download button */}
                   <div className="py-3 justify-center flex">
                     <button className="flex justify-center items-center bg-[#0e7490] hover:scale-110 hover:bg-[#0e7490] ease-in duration-300 ">
-                      <p className="mr-2">Download Resume</p>
+                      <p className="mr-2">
+                        <a
+                          href="assets/Anmol_Resume.pdf"
+                          download="Anmol_Resume.pdf"
+                        >
+                          Download Resume
+                        </a>
+                      </p>
                       <FaFileDownload className="text-white justify-center" />
                     </button>
                   </div>

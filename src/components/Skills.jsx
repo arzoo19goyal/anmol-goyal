@@ -1,99 +1,95 @@
-import Image from "next/image";
 import React from "react";
-import { FaUnity, FaBitbucket, FaJira } from "react-icons/fa";
-import {
-  SiBlender,
-  SiOculus,
-  SiCsharp,
-  SiPython,
-  SiFirebase,
-  SiAmazonaws,
-  SiMeta,
-  SiAdobephotoshop,
-  SiWebgl,
-  SiFacebook,
-  SiGoogleadmob,
-  SiMongodb,
-} from "react-icons/si";
-import { BsGit, BsGithub, BsTrello } from "react-icons/bs";
 
 const Skills = () => {
-  const skills = [
-    { name: "Unity", icon: <FaUnity className="skill-icon" /> },
-    { name: "Blender", icon: <SiBlender className="skill-icon" /> },
-    { name: "Git", icon: <BsGit className="skill-icon" /> },
-    { name: "Github", icon: <BsGithub className="skill-icon" /> },
-    {
-      name: "Bitbucket",
-      icon: <FaBitbucket className="w-[35px] h-[35px] text-gray-600" />,
-    },
-    { name: "Photon Plugins", img: "/assets/skills/photon.jpeg" },
-    { name: "Unity Net-Cide", icon: <FaUnity className="skill-icon" /> },
-    { name: "Jira", icon: <FaJira className="skill-icon" /> },
-    {
-      name: "Trello",
-      icon: <BsTrello className="w-[35px] h-[35px] text-gray-600" />,
-    },
-    { name: "Vuforia Plugins", img: "/assets/skills/vuforia.png" },
-    { name: "Oculus Plugins", icon: <SiOculus className="skill-icon" /> },
-    { name: "C#", icon: <SiCsharp className="skill-icon" /> },
-    { name: "Python", icon: <SiPython className="skill-icon" /> },
-    { name: "Firebase", icon: <SiFirebase className="skill-icon" /> },
-    { name: "Playfab", img: "/assets/skills/playfab.png" },
-    { name: "Amazon S3", icon: <SiAmazonaws className="skill-icon" /> },
-    { name: "Meta Quest2 ", icon: <SiMeta className="skill-icon" /> },
-    {
-      name: "Photoshop",
-      icon: <SiAdobephotoshop className="w-[35px] h-[35px] text-gray-600" />,
-    },
-    {
-      name: "WebGL",
-      icon: <SiWebgl className="w-[45px] h-[45px] text-gray-600" />,
-    },
-    {
-      name: "Facebook Ads",
-      icon: <SiFacebook className="w-[35px] h-[35px] text-gray-600" />,
-    },
-    {
-      name: "Google Admob",
-      icon: <SiGoogleadmob className="w-[35px] h-[35px] text-gray-600" />,
-    },
-    { name: "Mongo DB", icon: <SiMongodb className="skill-icon" /> },
-    { name: "Davinci Resolve", img: "/assets/skills/davinci.jpeg" },
-    {
-      name: "Facebook APIs",
-      icon: <SiFacebook className="w-[35px] h-[35px] text-gray-600" />,
-    },
-  ];
-
-  const renderSkill = (skill, index) => {
-    return (
-      <div
-        key={index}
-        className="p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 "
-      >
-        <div className="grid grid-cols-3 gap-2">
-          <div className="m-auto">
-            {skill?.img ? (
-              <Image src={skill.img} width="40" height="40" alt="/" />
-            ) : (
-              skill.icon
-            )}
-          </div>
-          <div className="flex flex-col col-span-2 justify-center">
-            <h3 className="text-lg tracking-tight">{skill.name}</h3>
-          </div>
-        </div>
-      </div>
-    );
-  };
-
   return (
     <div id="skills" className="w-full h-auto px-2 py-16">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <h2 className="text-xl uppercase py-4">Skills</h2>
-        <div className="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4">
-          {skills.map((skill, index) => renderSkill(skill, index))}
+        <div className="overflow-scroll">
+          <div className="skills-table flex">
+            <ul>
+              <p>3D Software & Game Engines</p>
+              <div>
+                <li>Unity</li>
+                <li>Blender</li>
+              </div>
+            </ul>
+            <ul>
+              <p>Version Control</p>
+              <div>
+                <li>Git</li>
+                <li>Github</li>
+                <li>Bitbucket</li>
+              </div>
+            </ul>
+            <ul>
+              <p>Multiplayer</p>
+              <div>
+                <li>Photon Plugins</li>
+                <li>Unity Net-code</li>
+              </div>
+            </ul>
+            <ul>
+              <p>Work Management Tools</p>
+              <div>
+                <li>Jira</li>
+                <li>Trello</li>
+              </div>
+            </ul>
+            <ul>
+              <p>AR/VR</p>
+              <div>
+                <li>Vuforia Plugins</li>
+                <li>AR Foundation</li>
+                <li>Oculus Plugins</li>
+              </div>
+            </ul>
+            <ul>
+              <p>Coding Languages</p>
+              <div>
+                <li>C#</li>
+                <li>C++</li>
+                <li>Python</li>
+              </div>
+            </ul>
+            <ul>
+              <p>Cloud Technologies</p>
+              <div>
+                <li>Firebase</li>
+                <li>Playfab</li>
+              </div>
+            </ul>
+            <ul>
+              <p>Database Integration</p>
+              <div>
+                <li>MongoDB</li>
+                <li>Amazon S3</li>
+              </div>
+            </ul>
+            <ul>
+              <p>Platforms</p>
+              <div>
+                <li>Meta Quest2</li>
+                <li>Android</li>
+                <li>WebGL</li>
+              </div>
+            </ul>
+            <ul>
+              <p>Ad Integration</p>
+              <div>
+                <li>Facebook Ads</li>
+                <li>Facebook APIs</li>
+                <li>Google Ads</li>
+              </div>
+            </ul>
+            <ul>
+              <p>Photo & Video Editing</p>
+              <div>
+                <li>Davinci Resolve</li>
+                <li>Adobe Photoshop</li>
+              </div>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

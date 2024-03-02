@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply scroll-smooth;
+}
+
 @layer base {
   body {
     @apply bg-[#fdfeff] text-[#1f2937] tracking-wide;
@@ -43,4 +47,18 @@
 
 .skill-icon {
   @apply w-10 h-10 text-gray-600;
+}
+
+.skills-table {
+  ul {
+    @apply p-2 grid grid-rows-[1fr,2fr];
+  }
+
+  p {
+    @apply p-1 text-gray-700 font-bold border-b-2 border-b-[#0e7490] bg-gray-100 rounded;
+  }
+
+  li {
+    @apply px-0 items-center justify-center hover:bg-white;
+  }
 }

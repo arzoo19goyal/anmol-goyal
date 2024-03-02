@@ -5,7 +5,7 @@ import anmolPic from "../../public/assets/anmol-blur.png";
 
 const About = () => {
   return (
-    <div id="about" className="w-full h-auto p-2 flex items-center py-16">
+    <div id="about" className="w-full h-auto px-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto">
         <h2 className="py-4 uppercase text-xl">About</h2>
         <div className=" md:grid grid-cols-3 gap-8">
