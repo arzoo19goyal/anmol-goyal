@@ -68,3 +68,9 @@ html {
     @apply cursor-default hover:bg-white;
   }
 }
+
+.resume-list {
+  li {
+    @apply pt-0 pb-1 pl-6 relative cursor-default hover:bg-white;
+  }
+}

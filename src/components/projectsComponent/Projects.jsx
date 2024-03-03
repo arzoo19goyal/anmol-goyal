@@ -72,12 +72,12 @@ const Projects = () => {
           />
           <ProjectItem
             project={GameProjectsInfo.Details.SuperHeroRun}
-            thumbnail={phobiaVoyage}
+            thumbnail={superHeroRun}
             projectUrl="/superherorun"
           />
           <ProjectItem
             project={GameProjectsInfo.Details.PhobiaVoyage}
-            thumbnail={superHeroRun}
+            thumbnail={phobiaVoyage}
             projectUrl="/phobiavoyage"
           />
           <ProjectItem
