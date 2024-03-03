@@ -15,7 +15,7 @@ const Contact = () => {
         <h2 className="text-xl uppercase py-4">Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
-          <div className="col-span-3 lg:col-span-2 w-full h-auto shadow-xl shadow-gray-400 rounded-xl p-4">
+          <div className="col-span-3 lg:col-span-2 w-full h-auto shadow-xl shadow-gray-400 rounded-xl p-4 lg:text-lg md:text-lg">
             <div className="lg:p-4 h-full">
               <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-2 bg-[#0e749068] max-w-[240px]">
                 <Image

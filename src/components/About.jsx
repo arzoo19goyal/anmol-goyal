@@ -16,7 +16,7 @@ const About = () => {
               alt="/"
             />
           </div>
-          <div className="col-span-2 py-4">
+          <div className="col-span-2 py-4 lg:text-lg md:text-lg">
             <p>Greetings!</p>
             <p className="py-2 text-gray-600">
               I'm Anmol, a game developer with a dynamic journey. From solo

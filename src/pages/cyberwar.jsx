@@ -24,14 +24,36 @@ const cyberwar = () => {
 
       <div className="max-w-[1240px] mx-auto p-2 grid gap-8 py-8">
         <div>
-          <Link href="/#projects" className="flex pb-4">
+          <Link href="/#projects" className="flex">
             <span>&lt;</span>
             <p className="underline cursor-pointer px-1"> Back</p>
           </Link>
+
+          <div className="py-8">
+            <a
+              href="https://github.com/fireclint/property-finder"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="px-8 py-2 mt-4 mr-8 bg-[#0e7490] hover:scale-110 hover:bg-[#0e7490] ease-in duration-300 shadow-lg">
+                Code
+              </button>
+            </a>
+            <a
+              href="https://property-finder-development.web.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="px-8 py-2 mt-4 bg-[#0e7490] hover:scale-110 hover:bg-[#0e7490] ease-in duration-300 shadow-lg">
+                Demo
+              </button>
+            </a>
+          </div>
+
           <h2>Overview</h2>
           <p className="py-4 text-xl">{cyberWarProject.shortDesc}</p>
 
-          <div className="text-md text-gray-600 project-desc">
+          <div className="lg:text-lg md:text-lg text-gray-600 project-desc">
             <p>
               I oversaw the programming for LearnFest, a web-based learning
               application, with an emphasis on presenting educational content
@@ -84,26 +106,6 @@ const cyberwar = () => {
               delivering technically intricate and engaging gaming experiences
               in the realm of cybersecurity.
             </p>
-          </div>
-          <div className="py-4">
-            <a
-              href="https://github.com/fireclint/property-finder"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button className="px-8 py-2 mt-4 mr-8 bg-[#0e7490] hover:scale-110 hover:bg-[#0e7490] ease-in duration-300">
-                Code
-              </button>
-            </a>
-            <a
-              href="https://property-finder-development.web.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button className="px-8 py-2 mt-4 bg-[#0e7490] hover:scale-110 hover:bg-[#0e7490] ease-in duration-300">
-                Demo
-              </button>
-            </a>
           </div>
         </div>
         <div className="flex justify-between w-full">

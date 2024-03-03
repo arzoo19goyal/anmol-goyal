@@ -42,7 +42,7 @@ html {
 }
 
 .project {
-  @apply grid grid-cols-2 items-center justify-center w-full shadow-lg shadow-gray-400 rounded-xl p-4;
+  @apply grid grid-cols-2 items-center justify-center w-full shadow-lg shadow-gray-400 rounded-xl p-4 lg:text-lg md:text-lg;
 }
 
 .skill-icon {
@@ -59,7 +59,7 @@ html {
   }
 
   li {
-    @apply px-0 items-center justify-center hover:bg-white;
+    @apply px-0 items-center justify-center hover:bg-white lg:text-lg md:text-lg;
   }
 }
 

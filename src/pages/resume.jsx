@@ -1,11 +1,30 @@
 import React from "react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaFileDownload,
+  FaExternalLinkAlt,
+} from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+import Link from "next/link";
 
 const resume = () => {
   return (
     <div className="max-w-[940px] mx-auto p-2 pt-[120px]">
-      <h2 className="text-center">Resume</h2>
+      <div className="flex justify-between">
+        <h2 className="text-center">Resume</h2>
+        <button className="px-12 flex justify-center shadow-lg items-center text-black bg-[#d0d4d6] hover:scale-110 hover:bg-[#c0c0c0] ease-in duration-300 ">
+          <p className="mr-4">
+            <a
+              href="https://drive.google.com/file/d/13aYpHmtiDrqAmMF6lQlsCKMATyc-pEb1/view?usp=sharing"
+              target="_blank"
+            >
+              Resume
+            </a>
+          </p>
+          <FaFileDownload className="justify-center" />
+        </button>
+      </div>
       <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
         <h2 className="text-center">Anmol Goyal</h2>
         <div className="flex">
@@ -38,7 +57,7 @@ const resume = () => {
         <div className="text-center py-4 text-xl font-bold uppercase tracking-wider">
           <p className="uppercase">Highlights of Qualifications</p>
         </div>
-        <div>
+        <div className="lg:text-[18px]">
           <ul className="resume-list pl-3">
             <li>
               <span className=" absolute text-3xl left-0 top-2 transform -translate-y-1/2">
@@ -63,9 +82,9 @@ const resume = () => {
       {/* Virtual Reality Project */}
       <div className="border-b border-b-gray">
         <p className="text-center py-4 text-xl font-bold uppercase tracking-wider">
-          Virtaul Reality Project
+          Virtual Reality Project
         </p>
-        <div>
+        <div className="lg:text-[18px]">
           <div>
             <div className="hidden sm:block">
               <div className="justify-between w-full flex font-bold">
@@ -127,15 +146,28 @@ const resume = () => {
         <p className="text-center py-4 text-xl font-bold uppercase tracking-wider">
           Publications
         </p>
-        <div>
-          <p>
-            <u>Ping Pong Mania</u> - Google Play Store, 5k+ downloads
+        <div className="lg:text-[18px]">
+          <p className="flex">
+            <Link
+              href="https://play.google.com/store/apps/details?id=com.Seraphic.solAR&pcampaignid=web_share"
+              target="_blank"
+              className="items-center flex"
+            >
+              <u>solAR</u>
+              <FaExternalLinkAlt className="px-1 text-2xl" />
+            </Link>
+            - Google Play Store, 500+ downloads
           </p>
-          <p>
-            <u>solAR</u> - Google Play Store, 500+ downloads
-          </p>
-          <p>
-            <u>Kompanions Learnfest</u> - WebGL Application (Live)
+          <p className="flex">
+            <Link
+              href="https://assetlibrary.kompanions.com/3dadmin/learnfest#"
+              target="_blank"
+              className="items-center flex"
+            >
+              <u>Kompanions Learnfest</u>
+              <FaExternalLinkAlt className="px-1 text-2xl" />
+            </Link>
+            - WebGL Application (Live)
           </p>
         </div>
         <br />
@@ -146,7 +178,7 @@ const resume = () => {
         <p className="text-center py-4 text-xl font-bold uppercase tracking-wider">
           Professional Experience
         </p>
-        <div>
+        <div className="lg:text-[18px]">
           {/* Inverse */}
           <div>
             <div>
@@ -275,7 +307,7 @@ const resume = () => {
                   &#8226;
                 </span>
                 Mentored three interns in game development, ensuring faster
-                onboarding and strengthened team performance.
+                onboarding and strengthening team performance.
               </li>
               <li>
                 <span className=" absolute text-3xl left-0 top-2 transform -translate-y-1/2">
@@ -374,7 +406,7 @@ const resume = () => {
         <p className="text-center py-4 text-xl font-bold uppercase tracking-wider">
           Education
         </p>
-        <div>
+        <div className="lg:text-[18px]">
           {/* Diploma, CA */}
           <div className="pb-2">
             <div>
@@ -457,48 +489,47 @@ const resume = () => {
         <p className="text-center py-4 text-xl font-bold uppercase tracking-wider">
           Technical Skills
         </p>
-        <div>
+        <div className="lg:text-[18px]">
           <p>
-            <b className="text-gray-600">3D Software & Game Engines:</b>: Unity,
+            <b className="text-gray-600">3D Software & Game Engines:</b> Unity,
             Blender
           </p>
           <p>
-            <b className="text-gray-600">Version Control:</b>: Git, Github,
+            <b className="text-gray-600">Version Control:</b> Git, Github,
             BitBucket
           </p>
           <p>
-            <b className="text-gray-600">Multiplayer:</b>: Photon Plugins, Unity
+            <b className="text-gray-600">Multiplayer:</b> Photon Plugins, Unity
             Net-code
           </p>
           <p>
-            <b className="text-gray-600">Work Management Tools:</b>: Jira,
-            Trello
+            <b className="text-gray-600">Work Management Tools:</b> Jira, Trello
           </p>
           <p>
-            <b className="text-gray-600">AR/VR:</b>: Vuforia Plugins, AR
+            <b className="text-gray-600">AR/VR:</b> Vuforia Plugins, AR
             Foundation, Oculus Plugins
           </p>
           <p>
-            <b className="text-gray-600">Coding Languages:</b>: C#, C++, Python
+            <b className="text-gray-600">Coding Languages:</b> C#, C++, Python
           </p>
           <p>
-            <b className="text-gray-600">Cloud Technologies:</b>: Firebase,
+            <b className="text-gray-600">Cloud Technologies:</b> Firebase,
             PlayFab
           </p>
           <p>
-            <b className="text-gray-600">Database Integration:</b>: MongoDB,
+            <b className="text-gray-600">Database Integration:</b> MongoDB,
             Amazon S3
           </p>
           <p>
-            <b className="text-gray-600">Platforms:</b>: Meta Quest2, Android,
+            <b className="text-gray-600">Platforms:</b> Meta Quest2, Android,
             PC, WebGL
           </p>
           <p>
-            <b className="text-gray-600">Ad Integration:</b>: Facebook Ads,
+            <b className="text-gray-600">Ad Integration:</b> Facebook Ads,
             Google Ads
           </p>
           <p>
-            <b className="text-gray-600">Photo & Video Editing:</b>: Davinci
+            <b className="text-gray-600">Photo & Video Editing:</b> Davinci
             Resolve, Adobe Photoshop
           </p>
         </div>

@@ -33,12 +33,37 @@ const ProjectItem = ({ project, thumbnail, projectUrl }) => {
           hidden
           className="cursor-pointer w-full py-2 px-4 absolute justify-center items-center flex"
         >
-          <Link
-            className="rounded-full px-4 py-3 shadow-xl shadow-gray-400 font-bold bg-white text-black border-2 border-[#0e7490]"
-            href={projectUrl}
-          >
-            Read More
-          </Link>
+          <div className="grid grid-rows-2">
+            <div className="flex justify-center">
+              <Link
+                className="rounded-full w-fit px-4 shadow-xl shadow-gray-300 font-bold bg-white text-black border-2 border-[#0e7490] flex items-center"
+                href={projectUrl}
+              >
+                Read More
+              </Link>
+            </div>
+
+            <div>
+              <a
+                href="https://github.com/fireclint/property-finder"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="px-8 py-2 mt-4 mr-8 bg-[#0e7490] hover:scale-110 hover:bg-[#0e7490] ease-in duration-300">
+                  Code
+                </button>
+              </a>
+              <a
+                href="https://property-finder-development.web.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="px-8 py-2 mt-4 bg-[#0e7490] hover:scale-110 hover:bg-[#0e7490] ease-in duration-300">
+                  Demo
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
       )}
     </div>

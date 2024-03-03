@@ -95,8 +95,8 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 overflow-auto"
-              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-full bg-[#ecf0f3] p-10 ease-in duration-500 overflow-auto"
+              : "fixed left-[-100%] top-0 p-10"
           }
         >
           <div>
@@ -201,13 +201,13 @@ const Navbar = () => {
                   </div>
                   {/* resume download button */}
                   <div className="py-3 justify-center flex">
-                    <button className="flex justify-center items-center bg-[#0e7490] hover:scale-110 hover:bg-[#0e7490] ease-in duration-300 ">
-                      <p className="mr-2">
+                    <button className="px-12 flex justify-center items-center bg-[#0e7490] hover:scale-110 hover:bg-[#0e7490] ease-in duration-300 ">
+                      <p className="mr-4 text-lg">
                         <a
-                          href="assets/Anmol_Resume.pdf"
-                          download="Anmol_Resume.pdf"
+                          href="https://drive.google.com/file/d/13aYpHmtiDrqAmMF6lQlsCKMATyc-pEb1/view?usp=sharing"
+                          target="_blank"
                         >
-                          Download Resume
+                          Resume
                         </a>
                       </p>
                       <FaFileDownload className="text-white justify-center" />

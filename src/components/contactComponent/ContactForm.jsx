@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useForm, ValidationError } from "@formspree/react";
 
@@ -40,6 +40,16 @@ const ContactForm = () => {
     setSubmitted(true);
   };
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setSubmitted(false);
+    }, 10000); // 10000 ms = 10 seconds
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [submitted]);
+
   return (
     <div className="p-4">
       <Form onSubmit={handleSubmit}>
@@ -61,7 +71,7 @@ const ContactForm = () => {
             <input
               className="border-2 rounded-lg p-3 flex border-gray-300"
               type="tel"
-              pattern={"[0-9]{10}" || "[0-9]{5}-[0-9]{5}"}
+              pattern={"[0-9]{10}"}
               placeholder="Enter your phone number"
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}

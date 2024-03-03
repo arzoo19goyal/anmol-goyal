@@ -8,7 +8,9 @@ const Skills = () => {
         <div className="overflow-scroll">
           <div className="skills-table flex">
             <ul>
-              <p>3D Software & Game Engines</p>
+              <div className="flex justify-center">
+                <p>Game Engines & 3D Software</p>
+              </div>
               <div>
                 <li>Unity</li>
                 <li>Blender</li>
@@ -17,7 +19,6 @@ const Skills = () => {
             <ul>
               <p>Version Control</p>
               <div>
-                <li>Git</li>
                 <li>Github</li>
                 <li>Bitbucket</li>
               </div>
@@ -57,6 +58,7 @@ const Skills = () => {
               <div>
                 <li>Firebase</li>
                 <li>Playfab</li>
+                <li>Facebook APIs</li>
               </div>
             </ul>
             <ul>
@@ -71,6 +73,7 @@ const Skills = () => {
               <div>
                 <li>Meta Quest2</li>
                 <li>Android</li>
+                <li>PC</li>
                 <li>WebGL</li>
               </div>
             </ul>
@@ -78,7 +81,6 @@ const Skills = () => {
               <p>Ad Integration</p>
               <div>
                 <li>Facebook Ads</li>
-                <li>Facebook APIs</li>
                 <li>Google Ads</li>
               </div>
             </ul>
