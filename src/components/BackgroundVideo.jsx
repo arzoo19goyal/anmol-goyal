@@ -8,6 +8,7 @@ const BackgroundVideo = () => {
       autoPlay
       muted
       loop
+      controls
     >
       <source src="/sizelreelBg.mp4" type="video/mp4" />
       background video
