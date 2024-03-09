@@ -18,7 +18,7 @@ const Skills = () => {
           {/* Version Control */}
           <ul>
             <p>Version Control</p>
-            <div>
+            <div className="bg-gray-50 rounded-b-xl">
               <li>Github</li>
               <li>Bitbucket</li>
             </div>

@@ -57,7 +57,7 @@ html {
   }
 
   p {
-    @apply flex items-center justify-center text-center uppercase p-2 text-gray-700 font-bold border-b-2 border-b-[#0e7490] bg-gray-100 rounded-t-xl;
+    @apply flex items-center justify-center text-center uppercase p-2 text-white font-bold border-b-2 border-b-[#505050] bg-[#0e7490] rounded-t-xl;
   }
 
   li {
