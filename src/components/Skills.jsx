@@ -27,7 +27,7 @@ const Skills = () => {
           {/* Multiplayer */}
           <ul>
             <p>Multiplayer</p>
-            <div>
+            <div className="bg-gray-50 rounded-b-xl">
               <li>Photon Plugins</li>
               <li>Unity Net-code</li>
             </div>
@@ -36,7 +36,7 @@ const Skills = () => {
           {/* Work Management tools */}
           <ul>
             <p>Work Management Tools</p>
-            <div>
+            <div className="bg-gray-50 rounded-b-xl">
               <li>Jira</li>
               <li>Trello</li>
             </div>
@@ -45,7 +45,7 @@ const Skills = () => {
           {/* AR/VR */}
           <ul>
             <p>AR/VR</p>
-            <div>
+            <div className="bg-gray-50 rounded-b-xl">
               <li>Vuforia Plugins</li>
               <li>AR Foundation</li>
               <li>Oculus Plugins</li>
@@ -55,7 +55,7 @@ const Skills = () => {
           {/* Coding language */}
           <ul>
             <p>Coding Languages</p>
-            <div>
+            <div className="bg-gray-50 rounded-b-xl">
               <li>C#</li>
               <li>C++</li>
               <li>Python</li>
@@ -65,7 +65,7 @@ const Skills = () => {
           {/* Cloud technologies */}
           <ul>
             <p>Cloud Technologies</p>
-            <div>
+            <div className="bg-gray-50 rounded-b-xl">
               <li>Firebase</li>
               <li>Playfab</li>
               <li>Facebook APIs</li>
@@ -75,7 +75,7 @@ const Skills = () => {
           {/* Database integration */}
           <ul>
             <p>Database Integration</p>
-            <div>
+            <div className="bg-gray-50 rounded-b-xl">
               <li>MongoDB</li>
               <li>Amazon S3</li>
             </div>
@@ -84,7 +84,7 @@ const Skills = () => {
           {/* Platforms */}
           <ul>
             <p>Platforms</p>
-            <div>
+            <div className="bg-gray-50 rounded-b-xl">
               <li>Meta Quest2</li>
               <li>Android</li>
               <li>PC</li>
@@ -95,7 +95,7 @@ const Skills = () => {
           {/* Ad Integration */}
           <ul>
             <p>Ad Integration</p>
-            <div>
+            <div className="bg-gray-50 rounded-b-xl">
               <li>Facebook Ads</li>
               <li>Google Ads</li>
             </div>
@@ -104,7 +104,7 @@ const Skills = () => {
           {/* Photo & video editing */}
           <ul>
             <p>Photo & Video Editing</p>
-            <div>
+            <div className="bg-gray-50 rounded-b-xl">
               <li>Davinci Resolve</li>
               <li>Adobe Photoshop</li>
             </div>
