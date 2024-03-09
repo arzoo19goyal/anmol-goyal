@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import solarSystemImg from "../../public/assets/projects/solar/thumbnail.png";
+import solarCollage from "../../public/assets/projects/solar/collage.png";
 import GameProjectsInfo from "@/components/projectsComponent/GameProjectsInfo";
 
 const solarsystem = () => {
@@ -96,6 +97,13 @@ const solarsystem = () => {
             </p>
           </div>
         </div>
+
+        <Image
+          src={solarCollage}
+          className="max-w-screen max-h-[900px]"
+          alt="/"
+        />
+
         <div className="flex justify-between w-full">
           <Link href="/phobiavoyage">
             <p className="underline cursor-pointe">Previous Project</p>

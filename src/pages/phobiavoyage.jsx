@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import phobiaVoyageImg from "../../public/assets/projects/phobia-voyage/PV-Thumbnail.png";
+import phobiaVoyageCollage from "../../public/assets/projects/phobia-voyage/collage.png";
 import GameProjectsInfo from "@/components/projectsComponent/GameProjectsInfo";
 
 const phobiavoyage = () => {
@@ -107,6 +108,9 @@ const phobiavoyage = () => {
             </p>
           </div>
         </div>
+
+        <Image src={phobiaVoyageCollage} alt="/" />
+
         <div className="flex justify-between w-full">
           <Link href="/superherorun">
             <p className="underline cursor-pointer">Previous Project</p>

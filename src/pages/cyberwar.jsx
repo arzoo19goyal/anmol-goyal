@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import cyberWarImg from "../../public/assets/projects/cyber-war/thumbnail.png";
+import cyberWarCollage from "../../public/assets/projects/cyber-war/collage.png";
 import GameProjectsInfo from "@/components/projectsComponent/GameProjectsInfo";
 
 const cyberwar = () => {
@@ -121,6 +122,9 @@ const cyberwar = () => {
             </p>
           </div>
         </div>
+
+        <Image src={cyberWarCollage} alt="/" />
+
         <div className="flex justify-between w-full">
           <Link href="#" className="pointer-events-none">
             <p className="underline cursor-pointer text-gray-400">
