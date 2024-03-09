@@ -12,8 +12,8 @@ const resume = () => {
   return (
     <div className="max-w-[940px] mx-auto p-2 pt-[120px]">
       <div className="flex justify-between">
-        <h2 className="text-center">Resume</h2>
-        <button className="px-12 flex justify-center shadow-lg items-center text-black bg-[#d0d4d6] hover:scale-110 hover:bg-[#c0c0c0] ease-in duration-300 ">
+        <h2 className="items-center flex">Resume</h2>
+        <button className="px-10 flex justify-center shadow-lg items-center text-black bg-[#d0d4d6] hover:scale-110 hover:bg-[#c0c0c0] ease-in duration-300 ">
           <p className="mr-4">
             <a
               href="https://drive.google.com/file/d/13aYpHmtiDrqAmMF6lQlsCKMATyc-pEb1/view?usp=sharing"
@@ -86,13 +86,13 @@ const resume = () => {
         </p>
         <div className="lg:text-[18px]">
           <div>
-            <div className="hidden sm:block">
+            <div className="hidden md:block">
               <div className="justify-between w-full flex font-bold">
                 <p>Phobia Voyage VR, Capstone Project</p>
                 <p className="text-gray-600">July 2023</p>
               </div>
             </div>
-            <div className="block sm:hidden">
+            <div className="block md:hidden">
               <p>
                 <b>Phobia Voyage VR, Capstone Project </b>
               </p>
@@ -147,7 +147,7 @@ const resume = () => {
           Publications
         </p>
         <div className="lg:text-[18px]">
-          <p className="flex">
+          <p className="sm:flex">
             <Link
               href="https://play.google.com/store/apps/details?id=com.Seraphic.solAR&pcampaignid=web_share"
               target="_blank"
@@ -158,7 +158,7 @@ const resume = () => {
             </Link>
             - Google Play Store, 500+ downloads
           </p>
-          <p className="flex">
+          <p className="sm:flex">
             <Link
               href="https://assetlibrary.kompanions.com/3dadmin/learnfest#"
               target="_blank"
@@ -182,7 +182,7 @@ const resume = () => {
           {/* Inverse */}
           <div>
             <div>
-              <div className="hidden sm:block">
+              <div className="hidden md:block">
                 <div className="justify-between w-full flex py-2">
                   <p>
                     <b>Unity Game Developer,</b> Inverse, UK (Remote)
@@ -192,7 +192,7 @@ const resume = () => {
                   </p>
                 </div>
               </div>
-              <div className="block sm:hidden py-2">
+              <div className="block md:hidden py-2">
                 <p className="py-1">
                   <b>Unity Game Developer,</b> Inverse, UK (Remote)
                 </p>
@@ -248,7 +248,7 @@ const resume = () => {
           {/* Gemini Solutions */}
           <div className="pt-3">
             <div>
-              <div className="hidden sm:block">
+              <div className="hidden md:block">
                 <div className="justify-between w-full flex pb-2">
                   <p>
                     <b>Software Developer - Unity Programmer,</b> Gemini
@@ -259,7 +259,7 @@ const resume = () => {
                   </p>
                 </div>
               </div>
-              <div className="block sm:hidden py-2">
+              <div className="block md:hidden py-2">
                 <p className="py-1">
                   <b>Software Developer - Unity Programmer,</b> Gemini
                   Solutions, Chandigarh, India
@@ -323,7 +323,7 @@ const resume = () => {
           {/* Seraphic */}
           <div className="pt-3">
             <div>
-              <div className="sm:block hidden">
+              <div className="md:block hidden">
                 <div className="justify-between w-full flex pb-2">
                   <p>
                     <b>Unity Developer,</b> Seraphic Info Solutions, Mohali,
@@ -334,7 +334,7 @@ const resume = () => {
                   </p>
                 </div>
               </div>
-              <div className="block sm:hidden py-2">
+              <div className="block md:hidden py-2">
                 <p className="py-1">
                   <b>Unity Developer,</b> Seraphic Info Solutions, Mohali, India
                 </p>
@@ -410,7 +410,7 @@ const resume = () => {
           {/* Diploma, CA */}
           <div className="pb-2">
             <div>
-              <div className="hidden sm:block">
+              <div className="hidden md:block">
                 <div className="justify-between w-full flex">
                   <p>
                     <b>Diploma in Virtual Reality Production,</b> Conestoga
@@ -419,7 +419,7 @@ const resume = () => {
                   <p className="font-bold">August 2023</p>
                 </div>
               </div>
-              <div className="block sm:hidden">
+              <div className="block md:hidden">
                 <p className="py-1">
                   <b>Diploma in Virtual Reality Production,</b> Conestoga
                   College, Kitchener, Ontario, CA
@@ -448,7 +448,7 @@ const resume = () => {
           {/* Bachelor, India */}
           <div>
             <div>
-              <div className="hidden sm:block">
+              <div className="hidden md:block">
                 <div className="justify-between w-full flex">
                   <p>
                     <b>Bachelor of Engineering in Computer Science,</b> Panjab
@@ -457,7 +457,7 @@ const resume = () => {
                   <p className="font-bold">August 2022</p>
                 </div>
               </div>
-              <div className="block sm:hidden">
+              <div className="block md:hidden">
                 <p className="py-1">
                   <b>Bachelor of Engineering in Computer Science,</b> Panjab
                   University, Chandigarh, India

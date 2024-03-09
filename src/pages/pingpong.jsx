@@ -52,41 +52,54 @@ const pingpong = () => {
           </div>
 
           <h2>Overview</h2>
-          <p className="py-4 text-xl">{pingPongManiaProject.shortDesc}</p>
+          <p className="py-4 text-xl text-justify">
+            {pingPongManiaProject.shortDesc}
+          </p>
 
-          <div className="lg:text-lg md:text-lg text-gray-600 project-desc">
+          <div className="project-desc">
             <p>As a dedicated programmer, my responsibilities included:</p>
-            <li>
-              Implementation of a versatile login system: guest login, Google,
-              Facebook, and Apple.
-            </li>
-            <li>
-              Integration of multiple ad sources: AdMob, Facebook Ads, and
-              IronSource for efficient ad management.
-            </li>
-            <li>
-              Dynamic reward system implementation to enhance user engagement.
-            </li>
-            <li>
-              Utilization of Photon for seamless synchronization of animations
-              in multiplayer mode.
-            </li>
-            <li>
-              Integration of Firebase to streamline and manage various
-              functionalities such as leaderboard, login system and share
-              functionality.
-            </li>
-            <li>
-              Use of Facebook APIs to handle ads, share events and fetch profile
-              features.
-            </li>
-            <li>
-              Creation of an effective monetization system through Unity IAPs.
-            </li>
-            <li>
-              Optimization of the game for smooth performance on lower-end
-              devices, minimizing crash events.
-            </li>
+            <ul>
+              <li>
+                <span>&#8226;</span>
+                Implementation of a versatile login system: guest login, Google,
+                Facebook, and Apple.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                Integration of multiple ad sources: AdMob, Facebook Ads, and
+                IronSource for efficient ad management.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                Dynamic reward system implementation to enhance user engagement.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                Utilization of Photon for seamless synchronization of animations
+                in multiplayer mode.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                Integration of Firebase to streamline and manage various
+                functionalities such as leaderboard, login system and share
+                functionality.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                Use of Facebook APIs to handle ads, share events and fetch
+                profile features.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                Creation of an effective monetization system through Unity IAPs.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                Optimization of the game for smooth performance on lower-end
+                devices, minimizing crash events.
+              </li>
+            </ul>
+
             <p>
               Experience the excitement of table tennis with our meticulously
               crafted game, where every aspect reflects a commitment to

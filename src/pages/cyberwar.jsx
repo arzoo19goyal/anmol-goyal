@@ -51,56 +51,69 @@ const cyberwar = () => {
           </div>
 
           <h2>Overview</h2>
-          <p className="py-4 text-xl">{cyberWarProject.shortDesc}</p>
+          <p className="py-4 text-xl text-justify">
+            {cyberWarProject.shortDesc}
+          </p>
 
-          <div className="lg:text-lg md:text-lg text-gray-600 project-desc">
+          <div className="project-desc">
             <p>
               I oversaw the programming for LearnFest, a web-based learning
               application, with an emphasis on presenting educational content
               using cutting-edge 2D and 3D simulations. Among my main
               contributions are:
             </p>
-            <li>
-              <b>MongoDB Integration:</b>
-              Implemented a public general chat system using MongoDB, enhancing
-              social interaction within the game environment.
-            </li>
-            <li>
-              <b>PlayFab User Login: </b>
-              Orchestrated the development of a robust user login system using
-              PlayFab, ensuring secure access and personalized experiences.
-            </li>
-            <li>
-              <b>REST API Utilization: </b>
-              Leveraged REST APIs to seamlessly retrieve company user data and
-              facilitate user registration in PlayFab.
-            </li>
-            <li>
-              <b>Gameplay Systems: </b>
-              Developed comprehensive gameplay systems, including health
-              dynamics (degeneration and regeneration) and in-game notifications
-              for the chat system.
-            </li>
-            <li>
-              <b>Social Features: </b>
-              Introduced challenge and poke systems between users, fostering a
-              competitive and interactive gaming community.
-            </li>
-            <li>
-              <b>Leaderboard Implementation: </b>
-              Integrated a leaderboard system to recognize and celebrate player
-              achievements.
-            </li>
-            <li>
-              <b>Optimization: </b>
-              Executed optimization strategies for the entire gameplay
-              experience, ensuring smooth performance.
-            </li>
-            <li>
-              <b>Mentorship: </b>
-              Provided guidance and mentorship to new interns, sharing insights
-              into Unity game development.
-            </li>
+            <ul>
+              <li>
+                <span>&#8226;</span>
+                <b>MongoDB Integration:</b>
+                Implemented a public general chat system using MongoDB,
+                enhancing social interaction within the game environment.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                <b>PlayFab User Login: </b>
+                Orchestrated the development of a robust user login system using
+                PlayFab, ensuring secure access and personalized experiences.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                <b>REST API Utilization: </b>
+                Leveraged REST APIs to seamlessly retrieve company user data and
+                facilitate user registration in PlayFab.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                <b>Gameplay Systems: </b>
+                Developed comprehensive gameplay systems, including health
+                dynamics (degeneration and regeneration) and in-game
+                notifications for the chat system.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                <b>Social Features: </b>
+                Introduced challenge and poke systems between users, fostering a
+                competitive and interactive gaming community.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                <b>Leaderboard Implementation: </b>
+                Integrated a leaderboard system to recognize and celebrate
+                player achievements.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                <b>Optimization: </b>
+                Executed optimization strategies for the entire gameplay
+                experience, ensuring smooth performance.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                <b>Mentorship: </b>
+                Provided guidance and mentorship to new interns, sharing
+                insights into Unity game development.
+              </li>
+            </ul>
+
             <p>
               This cyberwar platformer game in Unity reflects my commitment to
               delivering technically intricate and engaging gaming experiences

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 
 import GameProjectsInfo from "./GameProjectsInfo";
 import ProjectItem from "./ProjectItem";
@@ -12,40 +12,6 @@ import superHeroRun from "../../../public/assets/projects/super-hero-run/thumbna
 import solarSystem from "../../../public/assets/projects/solar/thumbnail.png";
 
 const Projects = () => {
-  // const getThumbnail = (p) => {
-  //   switch (p.name) {
-  //     case "Cyber War":
-  //       return cyberWars;
-  //     case "Kompanions Learnfest":
-  //       return learnfest;
-  //     case "Ping Pong Mania":
-  //       return pingPongMania;
-  //     case "Super Hero Run":
-  //       return superHeroRun;
-  //     case "VR Phobia Voyage":
-  //       return phobiaVoyage;
-  //     case "solAR - AR Solar System":
-  //       return solarSystem;
-  //   }
-  // };
-
-  // const rankedProjects = [
-  //   GameProjectsInfo.Details.CyberWar,
-  //   GameProjectsInfo.Details.Learnfest,
-  //   GameProjectsInfo.Details.PingPongMania,
-  //   GameProjectsInfo.Details.SuperHeroRun,
-  //   GameProjectsInfo.Details.PhobiaVoyage,
-  //   GameProjectsInfo.Details.SolarSystem,
-  // ];
-
-  // const [showButton, setShowButton] = useState(null);
-  // const handleMouseEnter = (index) => {
-  //   setShowButton(index);
-  // };
-  // const handleMouseLeave = () => {
-  //   setShowButton(null);
-  // };
-
   return (
     <div
       id="projects"

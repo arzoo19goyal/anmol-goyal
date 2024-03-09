@@ -52,31 +52,36 @@ const superherorun = () => {
           </div>
 
           <h2>Overview</h2>
-          <p className="py-4 text-xl">{superHeroRun.shortDesc}</p>
+          <p className="py-4 text-xl text-justify">{superHeroRun.shortDesc}</p>
 
-          <div className="lg:text-lg md:text-lg text-gray-600 project-desc">
+          <div className="project-desc">
             <p>
               In the creation of Super Hero Run, a hyper-casual 3D runner game
               prototype, I took charge of all programming aspects, ensuring a
               dynamic and engaging gaming experience. My contributions included:
             </p>
-            <li>
-              <b>AI Bot Diversity:</b>
-              Engineered AI bots with diverse strengths, enhancing the
-              competitiveness and unpredictability of gameplay.
-            </li>
-            <li>
-              <b>Multi-Mechanic Dynamics:</b>
-              Programmed seamless mechanics for flying, walking, and running,
-              allowing players to effortlessly switch between characters based
-              on obstacles encountered.
-            </li>
-            <li>
-              <b>Real-Time Competition: </b>
-              Implemented simultaneous competition with AI players, challenging
-              users to prove their skills and adaptability in a dynamic gaming
-              environment.
-            </li>
+            <ul>
+              <li>
+                <span>&#8226;</span>
+                <b>AI Bot Diversity:</b>
+                Engineered AI bots with diverse strengths, enhancing the
+                competitiveness and unpredictability of gameplay.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                <b>Multi-Mechanic Dynamics:</b>
+                Programmed seamless mechanics for flying, walking, and running,
+                allowing players to effortlessly switch between characters based
+                on obstacles encountered.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                <b>Real-Time Competition: </b>
+                Implemented simultaneous competition with AI players,
+                challenging users to prove their skills and adaptability in a
+                dynamic gaming environment.
+              </li>
+            </ul>
             <p>
               This project, completed within a week, showcases not only my
               technical prowess in Unity programming but also my ability to

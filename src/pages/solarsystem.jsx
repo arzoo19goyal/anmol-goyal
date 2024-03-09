@@ -52,32 +52,40 @@ const solarsystem = () => {
           </div>
 
           <h2>Overview</h2>
-          <p className="py-4 text-xl">{solarSystemProject.shortDesc}</p>
+          <p className="py-4 text-xl text-justify">
+            {solarSystemProject.shortDesc}
+          </p>
 
-          <div className="lg:text-lg md:text-lg text-gray-600 project-desc">
+          <div className="project-desc">
             <p>
               In my role as the primary programmer for SolAR, an innovative AR
               educational game, I spearheaded the integration of Vuforia plugins
               with Unity, enabling a seamless augmented reality experience. My
               responsibilities included:
             </p>
-            <li>
-              Crafting and optimizing the app's control mechanics for a
-              user-friendly interface.
-            </li>
-            <li>
-              Seamless integration of Unity In-App Purchases to enhance the
-              game's functionality.
-            </li>
-            <li>
-              Leveraging APIs from official sources to dynamically showcase
-              comprehensive solar system data.
-            </li>
-            <li>
-              Collaborating closely with the design team to implement
-              meticulously crafted 3D models and user interfaces into the Unity
-              environment.
-            </li>
+            <ul>
+              <li>
+                <span>&#8226;</span>
+                Crafting and optimizing the app's control mechanics for a
+                user-friendly interface.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                Seamless integration of Unity In-App Purchases to enhance the
+                game's functionality.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                Leveraging APIs from official sources to dynamically showcase
+                comprehensive solar system data.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                Collaborating closely with the design team to implement
+                meticulously crafted 3D models and user interfaces into the
+                Unity environment.
+              </li>
+            </ul>
             <p>
               This project not only underscored my technical proficiency in
               Unity programming but also showcased my ability to enhance

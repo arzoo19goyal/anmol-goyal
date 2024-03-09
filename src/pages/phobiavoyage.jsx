@@ -52,42 +52,53 @@ const phobiavoyage = () => {
           </div>
 
           <h2>Overview</h2>
-          <p className="py-4 text-xl">{phobiaVoyageProject.shortDesc}</p>
+          <p className="py-4 text-xl text-justify">
+            {phobiaVoyageProject.shortDesc}
+          </p>
 
-          <div className="lg:text-lg md:text-lg text-gray-600 project-desc">
+          <div className="project-desc">
             <p>
               As a dedicated game programmer, I spearheaded various aspects to
               elevate the gameplay and player satisfaction.
             </p>
             <p>Key Contributions:</p>
-            <li>
-              Integrated Oculus plugins in Unity for seamless VR experience.
-            </li>
-            <li>
-              Led gameplay programming, exceeding development goals by
-              delivering 30% faster than the projected timeline.
-            </li>
-            <li>
-              Optimized and debugged the game, resulting in huge improvement in
-              VR performance and an increase in player satisfaction.
-            </li>
-            <li>
-              Collaborated with art and design teams to enhance graphics,
-              lighting, and overall visual quality by 20%.
-            </li>
-            <li>
-              Executed an advanced audio system, boosting player engagement by
-              25%.
-            </li>
-            <li>
-              Developed complex game mechanics for VR, including rope climbing,
-              crawling, and tunnel exploration.
-            </li>
-            <li>
-              Feedbacks - Successfully recorded and worked on the user feedbacks
-              and finally improved the lighting and material qualities by huge
-              margin.
-            </li>
+            <ul>
+              <li>
+                <span>&#8226;</span>
+                Integrated Oculus plugins in Unity for seamless VR experience.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                Led gameplay programming, exceeding development goals by
+                delivering 30% faster than the projected timeline.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                Optimized and debugged the game, resulting in huge improvement
+                in VR performance and an increase in player satisfaction.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                Collaborated with art and design teams to enhance graphics,
+                lighting, and overall visual quality by 20%.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                Executed an advanced audio system, boosting player engagement by
+                25%.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                Developed complex game mechanics for VR, including rope
+                climbing, crawling, and tunnel exploration.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                Feedbacks - Successfully recorded and worked on the user
+                feedbacks and finally improved the lighting and material
+                qualities by huge margin.
+              </li>
+            </ul>
             <p>
               This project showcases my commitment to delivering immersive and
               high-quality gaming experiences and has been recognized by

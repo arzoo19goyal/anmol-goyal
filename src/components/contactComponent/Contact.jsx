@@ -80,7 +80,7 @@ const Contact = () => {
             <Link href="/">
               <IoIosArrowDropupCircle
                 className="shadow-lg shadow-gray-400 rounded-full text-[#0e7490] cursor-pointer hover:scale-110 ease-in duration-300"
-                size={50}
+                size={45}
               />
             </Link>
           </div>

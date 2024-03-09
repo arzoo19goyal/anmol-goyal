@@ -12,7 +12,7 @@ const ProjectItem = ({ project, thumbnail, projectUrl }) => {
       onMouseOut={() => setShowReadMore(false)}
     >
       <div
-        className={`project-item justify-center items-center flex max-w-full h-full ${
+        className={`justify-center items-center flex max-w-full h-full ${
           showReadMore ? "opacity-50" : ""
         }`}
       >
@@ -26,7 +26,7 @@ const ProjectItem = ({ project, thumbnail, projectUrl }) => {
         <h3 className="mb-4 text-[20px] text-[#0e7490] items-start">
           {project.name}
         </h3>
-        <p className="">{project.shortDesc}</p>
+        <p className="text-justify">{project.shortDesc}</p>
       </div>
       {showReadMore && (
         <div
@@ -35,11 +35,7 @@ const ProjectItem = ({ project, thumbnail, projectUrl }) => {
         >
           <div className="grid grid-rows-2 gap-12">
             <div>
-              <a
-                href="https://github.com/fireclint/property-finder"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={project.codeLink} target="_blank" rel="noreferrer">
                 <button className="px-8 py-2 mr-8 bg-[#0e7490] hover:scale-110 hover:bg-[#0e7490] ease-in duration-300">
                   Code
                 </button>

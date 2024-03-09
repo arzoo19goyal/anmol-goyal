@@ -52,33 +52,40 @@ const learnfest = () => {
           </div>
 
           <h2>Overview</h2>
-          <p className="py-4 text-xl">{learnfestProject.shortDesc}</p>
+          <p className="py-4 text-xl text-justify">
+            {learnfestProject.shortDesc}
+          </p>
 
-          <div className="lg:text-lg md:text-lg text-gray-600 project-desc">
+          <div className="project-desc">
             <p>
               I oversaw the programming for LearnFest, a web-based learning
               application, with an emphasis on presenting educational content
               using cutting-edge 2D and 3D simulations. Among my main
               contributions are:
             </p>
-            <li>
-              <b>Extensive Simulations:</b>
-              80–100 interactive simulations covering a broad range of topics,
-              including science, math, and more, were developed to create an
-              immersive and captivating learning environment.
-            </li>
-            <li>
-              <b>Cross-Subject Expertise: </b>
-              Participated in simulations spanning a range of academic levels
-              and subjects, guaranteeing a thorough and inclusive learning
-              environment.
-            </li>
-            <li>
-              <b>WebGL Integration: </b>
-              By utilising Unity, WebGL technology was smoothly integrated,
-              allowing students to access simulations straight from their web
-              browsers and promoting convenience and accessibility.
-            </li>
+            <ul>
+              <li>
+                <span>&#8226;</span>
+                <b>Extensive Simulations:</b>
+                80–100 interactive simulations covering a broad range of topics,
+                including science, math, and more, were developed to create an
+                immersive and captivating learning environment.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                <b>Cross-Subject Expertise: </b>
+                Participated in simulations spanning a range of academic levels
+                and subjects, guaranteeing a thorough and inclusive learning
+                environment.
+              </li>
+              <li>
+                <span>&#8226;</span>
+                <b>WebGL Integration: </b>
+                By utilising Unity, WebGL technology was smoothly integrated,
+                allowing students to access simulations straight from their web
+                browsers and promoting convenience and accessibility.
+              </li>
+            </ul>
             <p>
               LearnFest is evidence of my dedication to creating educational
               games and shows how interactive simulations can help students of
